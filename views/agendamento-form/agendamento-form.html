@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="agendamento-form.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,300&display=swap"
+        rel="stylesheet">
+
+    <title>HypeDev</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container">
+            
+
+            <section class="header-menu">
+                <a href="/views/certificados/certificados.html">Certificados</a>
+                <a href="/views/agendamento/agendamento.html">Agendamentos</a>
+                <a>Sobre nós</a>
+            </section>
+        </div>
+    </nav>
+
+    <section id="main">
+        <div class="container">
+            <div class="row">
+            <form method='post' action="/hypedev-main/cmv/controle/controle_cliente.php">
+
+                <div class="col-md-4">
+                    <label for="datep">Data Da Prova</label>
+                    <input type="date" id="datep" name="datep">
+                </div><br>
+
+                <div class="col-md-4">
+                    <select class="form-select" for="cert" id="cert" name="cert">>
+                        <option selected>Certificado que deseja</option>
+                        <option value="Introdução ao HTML5">Introdução ao HTML5</option>
+                        <option value="Introdução ao CSS3">Introdução ao CSS3</option>
+                        <option value="Boas práticas de Desenvolvimento WEB">Boas práticas de Desenvolvimento WEB</option>
+                        <option value="Introdução ao Java Script">Introdução ao Java Script</option>
+                    </select>
+                </div><br>
+
+                <div class="col-md-4">
+                    <select class="form-select" aria-label="Default select example" for="hora"
+                    type="hora" id="hora" name="hora"> 
+                        <option selected>Horário desejado</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                    </select>
+                </div>
+
+            
+
+                <div class="form-group row">
+                <div class="col">
+                <label for="nomec" class="form-label">Nome</label>
+                <input type="nome" class="form-control" id="nomec" name="nomec">
+                </div>
+                </div>
+
+                <div class="form-group row">
+                <div class="col">
+                <label for="cpf" class="form-label">cpf</label>
+                <input type="int" maxlength="11" class="form-control" id="cpf" name="cpf">
+                </div>
+                </div>
+            
+        <div class="form-group form-check-inline">
+            <div class="col-sm-12">
+                    
+                    <input type="submit" name="salva" value="salva" class="btn btn-success">
+                    <input type="submit" name="bt_listar" value="Consultar" class="btn btn-primary">
+                    <br>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer">
+        <div class="container">
+            <center>
+                <p> Copyright | 2021 </p>
+            </center>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ----- -->
+    <script type="text/javascript" src="./js/calendar.js"></script>
+    <!-- calendario -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>

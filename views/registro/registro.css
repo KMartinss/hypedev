@@ -1,0 +1,36 @@
+body {
+  background-color: #398191;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  margin-top: 70px;
+}
+
+.card .btn {
+  background-color: #398191;
+  color: #ffffff;
+  width: 50%;
+  margin-left: 250px;
+  margin-top: 15px;
+}
+
+.card header {
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+  font-size: 1.6rem;
+}
+
+.inputs {
+  margin-left: 250px !important;
+}
+
+.form-control {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+label {
+  margin-bottom: -10px;
+}

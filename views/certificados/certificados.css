@@ -1,0 +1,90 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #dfdfdf;
+  /* overflow: hidden; */
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+nav {
+  background-color: #398191;
+  margin-top: 40px;
+  height: 90px;
+}
+
+nav .header-menu {
+  font-weight: 200;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+nav .header-menu a {
+  color: #ffffff !important;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav .header-menu a:hover {
+  cursor: pointer;
+  color: #e4e4e4 !important;
+}
+
+#main {
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(0 0 0 / 45%);
+  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-left: 210px;
+    background-color: #ffffffc7;
+}
+
+.card:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.card img {
+  width: 50px;
+  height: 40px;
+}
+
+#footer {
+  background-color: #398191;
+  position: absolute;
+  width: 100%;
+  bottom: 0 !important;
+  margin-top: 40px;
+  height: 60px;
+  color: #ffffff;
+}
+
+#footer p {
+  margin-top: 22px;
+}
+
+.btn {
+  margin-top: 20px;
+  background-color: #398191;
+  color: #ffffff;
+  float: right;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  margin-top: 13px;
+}
+

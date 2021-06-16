@@ -1,0 +1,155 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #dfdfdf;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+nav {
+  background-color: #398191;
+  margin-top: 40px;
+  height: 90px;
+}
+
+nav .header-menu {
+  font-weight: 200;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+nav .header-menu a {
+  color: #ffffff !important;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav .header-menu a:hover {
+  cursor: pointer;
+  color: #e4e4e4 !important;
+}
+
+#main {
+  margin-top: 40px;
+}
+
+#main h2 {
+  font-weight: 200;
+  color: #0000006e;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(0 0 0 / 45%);
+  background-color: #ffffffc7;
+  margin-top: 49px;
+  width: 80%;
+  margin-left: 80px;
+}
+
+.card img {
+  width: 50px;
+  height: 40px;
+}
+
+#footer {
+  background-color: #398191;
+  position: absolute;
+  width: 100%;
+  margin-top: 40px;
+  bottom: -20pc;
+  height: 60px;
+  color: #ffffff;
+}
+
+#footer p {
+  margin-top: 22px;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  margin-top: 13px;
+}
+
+.button-new {
+  background-color: #398191;
+  color: #ffffff;
+  width: 250px;
+  float: right;
+  margin: 25px;
+  margin-top: -20px;
+}
+
+.button-new:hover {
+  background-color: #317180;
+  cursor: pointer;
+}
+
+.button-new:hover {
+  background-color: #317180;
+  cursor: pointer;
+}
+
+.btn {
+  background: none;
+  border: solid 1px transparent;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  padding: 6px 12px;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.btn i {
+  margin-right: 5px;
+}
+
+.btn-primary {
+  border-color: #317180;
+  color: #317180;
+  transition: background 0.3s linear 0s;
+}
+
+#remove {
+  border-color: red;
+  color: red;
+  transition: background 0.3s linear 0s;
+}
+
+#remove:hover {
+  background: rgba(245, 196, 196, 0.493);
+  border-color: red;
+  color: red;
+}
+
+.btn-primary:hover {
+  background: #317180;
+  border-color: #317180;
+  color: #ffffff;
+}
+
+#buttons {
+  margin-left: 20px;
+}
+
+#description {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #000000ab;
+}
+
+h3 {
+  color: #0000006e;
+  margin-top: 25px;
+}
