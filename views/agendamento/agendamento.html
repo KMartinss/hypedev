@@ -22,11 +22,10 @@
 
 <body>
     <nav class="navbar navbar-expand-sm">
+        <img src="/img/icons/logoHypeDev.png" alt="logo">
         <div class="container">
-
-
             <section class="header-menu">
-                <a href="/hypedev-main/views/certificados/certificados.html">Meus certificados</a>
+                <a href="/views/certificados/certificados.html">Certificados</a>
                 <a href="./agendamento.html">Agendamentos</a>
                 <a href="/views/sobrenos/sobrenos.html"> Sobre nós</a>
             </section>
@@ -41,53 +40,75 @@
         <div class="card col-sm-12">
             <h3>Novo agendamento</h3>
             <hr>
-
             <form method='post' action="/hypedev-main/cmv/controle/controle_cliente.php">
-                <div class="col-md-4">
-                    <label for="datep">Data Da Prova</label>
-                    <input type="date" id="datep" name="datep">
-                </div><br>
 
-                <div class="col-md-4">
-                    <select class="form-select" for="cert" id="cert" name="cert">>
-                        <option selected>Certificado que deseja</option>
-                        <option value="Introdução ao HTML5">Introdução ao HTML5</option>
-                        <option value="Introdução ao CSS3">Introdução ao CSS3</option>
-                        <option value="Boas práticas de Desenvolvimento WEB">Boas práticas de
-                            Desenvolvimento WEB</option>
-                        <option value="Introdução ao Java Script">Introdução ao Java Script</option>
-                    </select>
-                </div><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="nomec" class="form-label">Nome</label>
+                        <input type="nome" class="form-control" id="nomec" name="nomec">
+                    </div>
 
-                <div class="col-md-4">
-                    <select class="form-select" aria-label="Default select example" for="hora" type="hora" id="hora"
-                        name="hora">
-                        <option selected>Horário desejado</option>
-                        <option value="10:00">10:00</option>
-                        <option value="11:00">11:00</option>
-                        <option value="12:00">12:00</option>
-                        <option value="13:00">13:00</option>
-                        <option value="14:00">14:00</option>
-                        <option value="15:00">15:00</option>
-                        <option value="16:00">16:00</option>
-                        <option value="17:00">17:00</option>
-                        <option value="18:00">18:00</option>
-                        <option value="19:00">19:00</option>
-                        <option value="20:00">20:00</option>
-                    </select>
+                    <div class="col-md-6">
+                        <label for="cpf" class="form-label">CPF</label>
+                        <input type="int" maxlength="11" class="form-control" id="cpf" name="cpf">
+                    </div>
+
                 </div>
+
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="datep">Data Da Prova</label> <br>
+                        <input type="date" class="form-control" id="datep" name="datep">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="cert">Qual certificado você deseja?</label> <br>
+                        <select class="form-control" for="cert" id="cert" name="cert">
+                            <option selected>Selecione...</option>
+                            <option value="Introdução ao HTML5">Introdução ao HTML5</option>
+                            <option value="Introdução ao CSS3">Introdução ao CSS3</option>
+                            <option value="Boas práticas de Desenvolvimento WEB">Boas práticas de
+                                Desenvolvimento WEB</option>
+                            <option value="Introdução ao Java Script">Introdução ao Java Script</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="hora">Horário da avaliação:</label> <br>
+                        <select class="form-control" aria-label="Default select example" for="hora" type="hora"
+                            id="hora" name="hora">
+                            <option selected>Selecione...</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+
+
+
 
                 <div class="form-group row">
                     <div class="col">
-                        <label for="nomec" class="form-label">Nome</label>
-                        <input type="nome" class="form-control" id="nomec" name="nomec">
+
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <div class="col">
-                        <label for="cpf" class="form-label">cpf</label>
-                        <input type="int" maxlength="11" class="form-control" id="cpf" name="cpf">
+
                         <br>
                     </div>
                 </div>
@@ -100,8 +121,7 @@
                             <div class="col-sm-12">
 
                                 <input type="submit" name="Salvar" value="Salvar" class="btn btn-primary">
-                                <input type="submit" name="bt_listar" value="Listar"
-                                    class="btn btn-primary">
+                                <input type="submit" name="bt_listar" value="Listar" class="btn btn-primary">
                                 <a href="/hypedev-main/cmv/modelo/consulta.php" class="btn btn-primary"
                                     role="button">Consultar</a>
                         </section>

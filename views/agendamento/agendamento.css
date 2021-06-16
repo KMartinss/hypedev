@@ -51,7 +51,7 @@ nav .header-menu a:hover {
   background-color: #ffffffc7;
   margin-top: 49px;
   width: 80%;
-  margin-left: 80px;
+  margin-left: 130px;
 }
 
 .card img {
@@ -152,4 +152,11 @@ nav .header-menu a:hover {
 h3 {
   color: #0000006e;
   margin-top: 25px;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+  margin-left: 30px;
+  margin-top: 10px;
 }
